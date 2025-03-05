@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Here</string>
+    <string name="title_activity_listas">Listas</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string-array name="Alumno">
+        <item>Opciones</item>
+        <item>Manejar asistencia</item>
+        <item>Ver historial de asistencia</item>
+        <item>Actualizar datos</item>
+        <item>Borrar alumno</item>
+    </string-array>
+</resources>

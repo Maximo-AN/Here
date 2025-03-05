@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="375dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:elevation="60dp"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:backgroundTint="@color/white">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opciones para alumno"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#900C3F"
+        android:layout_marginBottom="16dp"/>
+
+    <Spinner
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/spnAlumno"
+        android:layout_marginTop="10dp"
+        android:entries="@array/Alumno"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/objetosAlumno">
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_cara"
+            android:hint="Nombre del alumno"
+            android:textColor="#900C3F"
+            android:textColorHint="#900C3F"
+            android:layout_marginRight="30dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtAlumnoAct"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_matricula"
+                android:id="@+id/txtMatriculaAct"
+                android:textColor="#900C3F"
+                android:textColorHint="#900C3F"
+                android:textSize="15sp"
+                android:hint="Matricula"
+                android:inputType="number"
+                android:imeOptions="actionNext"/>
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/txtNumListaAct"
+                android:layout_width="150dp"
+                android:textColorHint="#900C3F"
+                android:textColor="#900C3F"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_numero"
+                android:hint="Numero de lista"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/objetosAsistencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/rbgBotones"
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdbAsistencia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="#900C3F"
+                android:text="Asistencia" />
+            <RadioButton
+                android:id="@+id/rdbFalta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="#900C3F"
+                android:text="Falta" />
+            <RadioButton
+                android:id="@+id/rdbPendiente"
+                android:layout_width="match_parent"
+                android:buttonTint="#900C3F"
+                android:layout_height="match_parent"
+                android:text="Pendiente" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/objetosEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Dar de baja? :("
+            android:textColor="#900C3F"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:text="Aceptar"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_button3"
+        android:id="@+id/btnAceptar" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+        </LinearLayout>
