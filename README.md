@@ -9,3 +9,4 @@ Es posible:
 - Eliminar a alumnos
 
 Al ser para un proyecto final, puede que falten funciones escenciales al código.
+(Se adjunta archivo .apk de la version actual).
